@@ -10,13 +10,13 @@ contract DarkMechanicumEncounterLog {
     address constant EXAMPLE_ADDRESS = 0x0000000000000000000000000000000000000001;
 
     struct Encounter {
-        string forge;     
-        string behavior;  
-        string outcome;   
-        address creator;  
-        uint256 approved; 
-        uint256 rejected; 
-        uint256 createdAt;
+        string forge;     // Daemon Forge, Heretek Coven, Corrupted Manufactorum, etc.
+        string behavior;  // Short description of how da machines or hereteks acted
+        string outcome;   // Short description of how da scrap ended
+        address creator;  // Who recorded it
+        uint256 approved; // Votes for proppa'
+        uint256 rejected; // Votes for not proppa'
+        uint256 createdAt;// Timestamp
     }
 
     Encounter[] public logs;
